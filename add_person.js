@@ -17,7 +17,6 @@ knex.insert({
 .into('famous_people')
 .asCallback(function(err, rows) {
   if (err) return console.error(err);
-  console.log(rows)
   knex.destroy();
 });
 
